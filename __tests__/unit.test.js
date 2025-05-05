@@ -14,11 +14,11 @@ import {
 // Valid: "123-456-7890" — includes area code with dash
 // "(123) 456-7890" — area code in parentheses, followed by space and number
 test('123-456-7890 to be true', () => {
-  expect(isPhoneNumber('123-456-7890')).toBe(false);
+  expect(isPhoneNumber('123-456-7890')).toBe(true);
 });
 
 test('(123)-45-67-89-0 to be true', () => {
-  expect(isPhoneNumber('123-4567890')).toBe(false);
+  expect(isPhoneNumber('123-4567890')).toBe(true);
 });
 
 test('1234567890 to be false', () => {
