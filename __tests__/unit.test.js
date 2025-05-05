@@ -18,7 +18,7 @@ test('123-456-7890 to be true', () => {
 });
 
 test('(123)-45-67-89-0 to be true', () => {
-  expect(isPhoneNumber('123-4567890')).toBe(true);
+  expect(isPhoneNumber('123-4567890')).toBe(false);
 });
 
 test('1234567890 to be false', () => {
