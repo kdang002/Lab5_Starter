@@ -82,9 +82,6 @@ function init()
 
   const jsConfetti = new JSConfetti();
   
-  jsConfetti.addConfetti({
-    emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸'],
- })
  
   //Get "Play Sound" button element
   const playButtonElm = document.querySelector("#expose button");
@@ -100,7 +97,9 @@ function init()
       //Party horn: Add confetti
       if (hornSelectElm.value == "party-horn")
         {
-          jsConfetti.addConfetti();
+          jsConfetti.addConfetti({
+            emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸'],
+         })     
         } 
   });
 }
